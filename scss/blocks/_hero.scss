@@ -1,0 +1,58 @@
+.hero__block {
+  @include dis-c;
+  justify-content: space-between;
+}
+
+.hero__info {
+  h2 {
+    color: $color-text-green;
+    font-family: SF Pro Rounded;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 89.836%;
+    width: 523px;
+  }
+  p {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: $color-text-grey;
+    width: 374px;
+  }
+}
+
+.hero__img {
+  background-image: url(../../img/Ellipse\ 1.png);
+  width: 770px;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @media (max-width:$desktop-1) {
+    height: 696px;
+    background-position: left;
+    width: 550px;
+  }
+}
+
+.hero__bottle-img {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 770px;
+  height: 520px;
+  @media (max-width:$desktop-1) {
+    width: 700px;
+    height: 450px;
+    top: 150px;
+    left: -50px;
+  }
+  @media (max-width:$desktop) {
+    width: 674.029px;
+    height: 465.06px;
+  }
+}

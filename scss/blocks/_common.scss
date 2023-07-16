@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width:$desktop) {
+    max-width: 1200px;
+  }
+  @media (max-width:$table) {
+    max-width: 834px;
+  }
+  @media (max-width:$phone) {
+    max-width: 375px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
