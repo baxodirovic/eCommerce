@@ -1,6 +1,13 @@
 .hero__block {
   @include dis-c;
   justify-content: space-between;
+  @media (max-width:$desktop) {
+    align-items: flex-end;
+  }
+  @media (max-width:$table) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
 }
 
 .hero__info {
@@ -12,6 +19,11 @@
     font-weight: 600;
     line-height: 89.836%;
     width: 523px;
+    @media (max-width:$table) {
+      font-size: 40px;
+      text-align: center;
+      width: 300px;
+    }
   }
   p {
     font-family: SF Pro Display;
@@ -20,7 +32,12 @@
     font-weight: 600;
     line-height: 140%;
     color: $color-text-grey;
-    width: 374px;
+    width: 366px;
+    @media (max-width:$table) {
+      font-size: 12px;
+      text-align: center;
+      width: 300px;
+    }
   }
 }
 
@@ -31,20 +48,32 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   @media (max-width:$desktop-1) {
     height: 696px;
     background-position: left;
     width: 550px;
   }
+  @media (max-width:$desktop) {
+    height: 550px;
+    background-image: url(../../img/Ellipse\ 1\ \(1\).png);
+  }
+  @media (max-width:$table) {
+    background-image: url(../../img/Ellipse\ 1\ \(2\).png);
+    width: 226.528px;
+    height: 186.297px;
+  }
 }
 
 .hero__bottle-img {
-  position: absolute;
-  top: 200px;
-  right: 100px;
   width: 770px;
   height: 520px;
+  position: absolute;
+  z-index: 1;
+  right: 60px;
   @media (max-width:$desktop-1) {
     width: 700px;
     height: 450px;
@@ -52,7 +81,18 @@
     left: -50px;
   }
   @media (max-width:$desktop) {
-    width: 674.029px;
-    height: 465.06px;
+    width: 290.839px;
+    height: 196.411px;
+    top: 35vh;
+    right: 6vh;
+    left: auto;
+  }
+  @media (max-width:$table) {
+    width: 226.528px;
+    height: 156.297px;
+  }
+  @media (max-width:$phone) {
+    height: 83.641px;
+    width: 123.852px;
   }
 }

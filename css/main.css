@@ -157,6 +157,17 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  .hero__block {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 834px) {
+  .hero__block {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
 
 .hero__info h2 {
   color: #5FD788;
@@ -167,6 +178,13 @@ ul {
   line-height: 89.836%;
   width: 523px;
 }
+@media (max-width: 834px) {
+  .hero__info h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 300px;
+  }
+}
 .hero__info p {
   font-family: SF Pro Display;
   font-size: 14px;
@@ -174,7 +192,14 @@ ul {
   font-weight: 600;
   line-height: 140%;
   color: #9CA3AF;
-  width: 374px;
+  width: 366px;
+}
+@media (max-width: 834px) {
+  .hero__info p {
+    font-size: 12px;
+    text-align: center;
+    width: 300px;
+  }
 }
 
 .hero__img {
@@ -184,6 +209,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 @media (max-width: 1440px) {
@@ -193,13 +221,26 @@ ul {
     width: 550px;
   }
 }
+@media (max-width: 1200px) {
+  .hero__img {
+    height: 550px;
+    background-image: url(../../img/Ellipse\ 1\ \(1\).png);
+  }
+}
+@media (max-width: 834px) {
+  .hero__img {
+    background-image: url(../../img/Ellipse\ 1\ \(2\).png);
+    width: 226.528px;
+    height: 186.297px;
+  }
+}
 
 .hero__bottle-img {
-  position: absolute;
-  top: 200px;
-  right: 100px;
   width: 770px;
   height: 520px;
+  position: absolute;
+  z-index: 1;
+  right: 60px;
 }
 @media (max-width: 1440px) {
   .hero__bottle-img {
@@ -211,7 +252,22 @@ ul {
 }
 @media (max-width: 1200px) {
   .hero__bottle-img {
-    width: 674.029px;
-    height: 465.06px;
+    width: 290.839px;
+    height: 196.411px;
+    top: 35vh;
+    right: 6vh;
+    left: auto;
+  }
+}
+@media (max-width: 834px) {
+  .hero__bottle-img {
+    width: 226.528px;
+    height: 156.297px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__bottle-img {
+    height: 83.641px;
+    width: 123.852px;
   }
 }/*# sourceMappingURL=main.css.map */
