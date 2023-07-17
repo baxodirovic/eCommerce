@@ -1,0 +1,16 @@
+.category__box {
+  width: 273.902px;
+  height: 274px;
+  border-radius: 0px 20px;
+  background: $color-text-white;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.category__img {
+  width: 110.379px;
+  height: 115.452px;
+}

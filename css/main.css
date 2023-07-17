@@ -51,6 +51,8 @@ li {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header__block {
@@ -270,4 +272,21 @@ ul {
     height: 83.641px;
     width: 123.852px;
   }
+}
+
+.category__box {
+  width: 273.902px;
+  height: 274px;
+  border-radius: 0px 20px;
+  background: #F9FAFB;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.category__img {
+  width: 110.379px;
+  height: 115.452px;
 }/*# sourceMappingURL=main.css.map */
