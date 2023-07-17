@@ -5,7 +5,8 @@
 }
 
 .header__logo {
-  @include dis-c;
+  display: flex;
+  align-items: flex-end;
   gap: 12px;
 }
 

@@ -1,12 +1,10 @@
 .hero__block {
   @include dis-c;
   justify-content: space-between;
-  @media (max-width:$desktop) {
-    align-items: flex-end;
-  }
-  @media (max-width:$table) {
+  @media (max-width: $table) {
     flex-wrap: wrap-reverse;
     justify-content: center;
+    margin-top: 50px;
   }
 }
 
@@ -19,10 +17,10 @@
     font-weight: 600;
     line-height: 89.836%;
     width: 523px;
-    @media (max-width:$table) {
+    @media (max-width: $table) {
       font-size: 40px;
       text-align: center;
-      width: 300px;
+      width: 295px;
     }
   }
   p {
@@ -33,10 +31,10 @@
     line-height: 140%;
     color: $color-text-grey;
     width: 366px;
-    @media (max-width:$table) {
-      font-size: 12px;
+    @media (max-width: $table) {
       text-align: center;
-      width: 300px;
+      font-size: 12px;
+      width: 295px;
     }
   }
 }
@@ -57,42 +55,37 @@
     background-position: left;
     width: 550px;
   }
-  @media (max-width:$desktop) {
-    height: 550px;
+  @media (max-width: $desktop) {
     background-image: url(../../img/Ellipse\ 1\ \(1\).png);
+    width: 300px;
+    height: 515px;
+    align-items: flex-end;
+    justify-content: space-around;
   }
-  @media (max-width:$table) {
+  @media (max-width: $table) {
     background-image: url(../../img/Ellipse\ 1\ \(2\).png);
     width: 226.528px;
     height: 186.297px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .hero__bottle-img {
-  width: 770px;
-  height: 520px;
+  width: 880px;
+  height: 630px;
   position: absolute;
   z-index: 1;
-  right: 60px;
-  @media (max-width:$desktop-1) {
-    width: 700px;
-    height: 450px;
-    top: 150px;
-    left: -50px;
+  @media (max-width: $desktop-1) {
+    width: 650px;
+    height: 400px;
   }
-  @media (max-width:$desktop) {
-    width: 290.839px;
-    height: 196.411px;
-    top: 35vh;
-    right: 6vh;
-    left: auto;
+  @media (max-width: $desktop) {
+    width: 350.839px;
+    height: 240.411px;
   }
-  @media (max-width:$table) {
-    width: 226.528px;
-    height: 156.297px;
-  }
-  @media (max-width:$phone) {
-    height: 83.641px;
+  @media (max-width: $table) {
     width: 123.852px;
+    height: 83.641px;
   }
 }
