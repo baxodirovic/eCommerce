@@ -1,16 +1,68 @@
+.categories__block {
+  margin-top: 100px;
+}
+
+.category__boxes {
+  @include dis-f;
+  @media (max-width: $desktop) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
 .category__box {
   width: 273.902px;
   height: 274px;
   border-radius: 0px 20px;
-  background: $color-text-white;
+  background-color: $color-text-white;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: none;
+  gap: 10px;
+  @media (max-width: $table) {
+    width: 122.284px;
+    height: 122.327px;
+    gap: 5px;
+  }
+}
+.category__box:hover {
+  background: $color-text-green;
+  cursor: pointer;
+  .category__img {
+    color: $color-text-white;
+  }
+  ul li .category__name {
+    color: $color-text-white;
+  }
 }
 
+.category__name {
+  color: $color-text-green;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  @media (max-width: $desktop) {
+    font-size: 14px;
+  }
+}
+
+
 .category__img {
-  width: 110.379px;
-  height: 115.452px;
+  color: $color-text-green;
+}
+
+.category__svg {
+  display: inline-block;
+  width: 110px;
+  height: 115px;
+  @media (max-width: $table) {
+    width: 45.741px;
+    height: 45.091px;
+  }
 }
