@@ -1,0 +1,126 @@
+.therapy__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: $table) {
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 50px;
+  }
+}
+
+.therapy__image {
+  background-image: url(../../img/Blob.svg);
+  height: 910px;
+  width: 550px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @media (max-width: $desktop) {
+    background-image: url(../../img/Blob.png);
+    width: 270.745px;
+    height: 490.312px;
+  }
+  @media (max-width: $table) {
+    background-image: url(../../img/Bob.svg);
+    width: 190.462px;
+    height: 204.246px;
+  }
+}
+
+.therapy__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 250px;
+  @media (max-width: $desktop) {
+    margin: 0;
+  }
+  @media (max-width: $table) {
+    align-items: center;
+  }
+}
+
+.therapy__img {
+  width: 601.284px;
+  height: 532px;
+  position: absolute;
+  z-index: 1;
+  left: 160px;
+  top: 280px;
+  @media (max-width: $desktop) {
+    width: 402.504px;
+    height: 356.125px;
+    left: 40px;
+    top: 75px;
+  }
+  @media (max-width: $table) {
+    width: 155.266px;
+    height: 137.375px;
+    top: 25px;
+  }
+}
+
+.therapy__title {
+  text-align: right;
+  font-family: SF Pro Rounded;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107.9%; 
+  letter-spacing: 0.5px;
+  color: $color-text-green;
+  width: 540px;
+  @media (max-width: $desktop) {
+    font-size: 40px;
+  }
+  @media (max-width: $table) {
+    font-size: 20px;
+    text-align: center;
+    width: 270px;
+  }
+}
+
+.therapy__text {
+  color: $color-text-grey;
+  text-align: right;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  width: 355px;
+  @media (max-width: $table) {
+    font-size: 12px;
+    text-align: center;
+    width: 260px;
+  }
+}
+
+.green__btn {
+  width: 274px;
+  height: 40px;
+  border-radius: 8px;
+  background: $color-text-green;
+  border: 1px solid $color-text-green;
+  a {
+    color: $color-text-white;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.9%; 
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+  }
+}
+
+.green__btn:hover {
+  background: $color-text-white;
+  border: none;
+  cursor: pointer;
+  a {
+    color: $color-text-green;
+  }
+}
