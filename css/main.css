@@ -487,4 +487,28 @@ ul {
 }
 .green__btn:hover a {
   color: #5FD788;
+}
+
+.product__bestsellers {
+  background-image: url(../../img/Visual\ -\ Flower.svg);
+  height: 560px;
+  width: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product__title {
+  color: #5FD788;
+  font-family: SF Pro Rounded;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107.9%;
+  letter-spacing: 0.5px;
+}
+
+.product__card__img {
+  width: 375px;
+  height: 386px;
 }/*# sourceMappingURL=main.css.map */
