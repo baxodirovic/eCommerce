@@ -710,4 +710,133 @@ ul {
   border-radius: 50%;
   padding: 0;
   background: #9CA3AF;
+}
+
+.benefit__block {
+  width: 100%;
+  background: #5FD788;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+@media (max-width: 834px) {
+  .benefit__block {
+    margin-top: 20px;
+  }
+}
+
+.benefit__info {
+  background-image: url(../../img/Texture_2_.svg);
+  height: 513.041px;
+  width: 792px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 100px;
+}
+@media (max-width: 1440px) {
+  .benefit__info {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 834px) {
+  .benefit__info {
+    width: 100%;
+    height: 515px;
+    background-image: url(../../img/Image\ \(2\).png);
+    padding-left: 0px;
+    filter: blur(0.5px);
+    align-items: center;
+  }
+}
+
+.benefit__headline {
+  color: #fff;
+  font-family: SF Pro Rounded;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 119.4%;
+  letter-spacing: 0.5px;
+  width: 540px;
+}
+@media (max-width: 1200px) {
+  .benefit__headline {
+    font-size: 38px;
+    width: 360px;
+  }
+}
+@media (max-width: 834px) {
+  .benefit__headline {
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.32px;
+  }
+}
+
+.white__btn {
+  width: 274px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+}
+.white__btn a {
+  color: #1F2937;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 97.9%; /* 15.664px */
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .white__btn {
+    width: 180px;
+  }
+}
+
+.white__btn:hover {
+  background: #5FD788;
+  cursor: pointer;
+}
+.white__btn:hover a {
+  color: #fff;
+}
+
+.benefit__image {
+  width: 652.442px;
+  height: 515px;
+}
+@media (max-width: 1440px) {
+  .benefit__image {
+    width: 605px;
+  }
+}
+@media (max-width: 1200px) {
+  .benefit__image {
+    display: none;
+  }
+}
+
+.benefit__img__desktop {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .benefit__img__desktop {
+    display: block;
+  }
+}
+@media (max-width: 834px) {
+  .benefit__img__desktop {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

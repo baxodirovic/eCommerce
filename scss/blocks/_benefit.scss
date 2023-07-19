@@ -1,0 +1,108 @@
+.benefit__block {
+  width: 100%;
+  background: $color-text-green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  @media (max-width: $table) {
+    margin-top: 20px;
+  }
+}
+
+.benefit__info {
+  background-image: url(../../img/Texture_2_.svg);
+  height: 513.041px;
+  width: 792px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 100px;
+  @media (max-width: $desktop-1) {
+    padding-left: 50px;
+  }
+  @media (max-width: $table) {
+    width: 100%;
+    height: 515px;
+    background-image: url(../../img/Image\ \(2\).png);
+    padding-left: 0px;
+    filter: blur(0.5px);
+    align-items: center;
+  }
+}
+
+.benefit__headline {
+  color: #fff;
+  font-family: SF Pro Rounded;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 119.4%;
+  letter-spacing: 0.5px;
+  width: 540px;
+  @media (max-width: $desktop) {
+    font-size: 38px;
+    width: 360px;
+  }
+  @media (max-width: $table) {
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    letter-spacing: 0.32px;
+  }
+}
+
+.white__btn {
+  width: 274px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  a {
+    color: $color-text-black;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.9%; /* 15.664px */
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+  }
+  @media (max-width: $desktop) {
+    width: 180px;
+  }
+}
+
+.white__btn:hover {
+  background: $color-text-green;
+  cursor: pointer;
+  a {
+    color: #fff;
+  }
+}
+
+.benefit__image {
+  width: 652.442px;
+  height: 515px;
+  @media (max-width: $desktop-1) {
+    width: 605px;
+  }
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.benefit__img__desktop {
+  display: none;
+  @media (max-width: $desktop) {
+    display: block;
+  }
+  @media (max-width: $table) {
+    display: none;
+  }
+}
