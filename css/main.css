@@ -523,6 +523,14 @@ ul {
     align-items: center;
   }
 }
+@media (max-width: 834px) {
+  .product__bestsellers {
+    background-image: url(../../img/Visual\ -\ Flower\ \(1\).svg);
+    width: 229.539px;
+    height: 327px;
+    margin-bottom: 30px;
+  }
+}
 
 .product__title {
   color: #5FD788;
@@ -556,6 +564,12 @@ ul {
   width: 375px;
   height: 386px;
 }
+@media (max-width: 834px) {
+  .product__card__img {
+    width: 298px;
+    height: 310px;
+  }
+}
 
 .product__card__info {
   border-radius: 0px 20px;
@@ -567,6 +581,12 @@ ul {
   position: absolute;
   padding-left: 15px;
 }
+@media (max-width: 834px) {
+  .product__card__info {
+    width: 300px;
+    height: 72.414px;
+  }
+}
 
 .product__card__info__black {
   border-radius: 0px 20px;
@@ -577,6 +597,12 @@ ul {
   height: 91px;
   position: absolute;
   padding-left: 15px;
+}
+@media (max-width: 834px) {
+  .product__card__info__black {
+    width: 300px;
+    height: 72.414px;
+  }
 }
 
 .product__card__title {
@@ -592,6 +618,11 @@ ul {
   font-weight: 700;
   line-height: 140%;
   margin: 0;
+}
+@media (max-width: 834px) {
+  .product__card__title h4 {
+    font-size: 15px;
+  }
 }
 .product__card__title span {
   display: flex;
@@ -611,6 +642,13 @@ ul {
   letter-spacing: 0.1px;
   text-transform: uppercase;
 }
+@media (max-width: 834px) {
+  .product__card__title span {
+    font-size: 6px;
+    width: 25.464px;
+    height: 11.936px;
+  }
+}
 
 .product__card__text {
   display: flex;
@@ -627,12 +665,23 @@ ul {
   line-height: 140%;
   margin: 0;
 }
+@media (max-width: 834px) {
+  .product__card__text p {
+    font-size: 11px;
+    width: 180px;
+  }
+}
 .product__card__text button {
   border: none;
 }
 
 .product__add__btn {
   background: inherit;
+}
+@media (max-width: 834px) {
+  .product__add__btn {
+    display: none;
+  }
 }
 
 .three__btn {
