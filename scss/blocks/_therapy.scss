@@ -124,3 +124,12 @@
     color: $color-text-green;
   }
 }
+
+
+.green__btn:active {
+  background: $color-text-black;
+  border: none;
+  a {
+    color: $color-text-white;
+  }
+}

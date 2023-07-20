@@ -18,6 +18,9 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;

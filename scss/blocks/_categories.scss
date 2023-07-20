@@ -19,6 +19,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   flex-direction: column;
   border: none;
   gap: 10px;
@@ -30,10 +31,16 @@
 }
 .category__box:hover {
   background: $color-text-green;
-  cursor: pointer;
   .category__img {
     color: $color-text-white;
   }
+  ul li .category__name {
+    color: $color-text-white;
+  }
+}
+
+.category__box:active {
+  background: $color-text-black;
   ul li .category__name {
     color: $color-text-white;
   }

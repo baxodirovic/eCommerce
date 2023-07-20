@@ -86,6 +86,13 @@
   }
 }
 
+.white__btn:active {
+  background: $color-text-black;
+  a {
+    color: #fff;
+  }
+}
+
 .benefit__image {
   width: 652.442px;
   height: 515px;
