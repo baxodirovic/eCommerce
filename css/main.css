@@ -1,3 +1,65 @@
+@font-face {
+  font-family: sf pro display;
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 100;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 200;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 300;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: normal;
+  font-weight: 500;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 600;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: normal;
+  font-weight: 700;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 800;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: sf pro display;
+  font-style: italic;
+  font-weight: 900;
+  src: local("SF Pro Display"), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: "SF Pro Rounded Regular";
+  src: url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot");
+  src: url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff") format("woff"), url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/ead4092f880f75ff0883ced1856b2c37.svg#SF Pro Rounded Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
 }
@@ -33,11 +95,6 @@ body {
 @media (max-width: 834px) {
   .container {
     max-width: 834px;
-  }
-}
-@media (max-width: 375px) {
-  .container {
-    max-width: 375px;
   }
 }
 
@@ -104,11 +161,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 50px;
   }
   .header__hamburger * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 1;
   }
   .header__hamburger input[type=checkbox]:checked + .menu + .navbar ul {
     transform: translateY(0);
@@ -126,12 +185,13 @@ ul {
     flex-direction: column;
     gap: 20px;
     height: 200px;
-    top: 0;
+    top: 50px;
     position: fixed;
     align-items: center;
     justify-content: center;
-    transform: translateX(320%);
+    transform: translateX(200%);
     background-color: white;
+    right: 0px;
   }
 }
 @media (max-width: 834px) {
@@ -169,7 +229,7 @@ ul {
 
 .hero__info h2 {
   color: #5FD788;
-  font-family: SF Pro Rounded;
+  font-family: "SF Pro Rounded Regular";
   font-size: 96px;
   font-style: normal;
   font-weight: 600;
@@ -422,7 +482,7 @@ ul {
 
 .therapy__title {
   text-align: right;
-  font-family: SF Pro Rounded;
+  font-family: "SF Pro Rounded Regular";
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
@@ -534,7 +594,7 @@ ul {
 
 .product__title {
   color: #5FD788;
-  font-family: SF Pro Rounded;
+  font-family: "SF Pro Rounded Regular";
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
@@ -757,7 +817,7 @@ ul {
 
 .benefit__headline {
   color: #fff;
-  font-family: SF Pro Rounded;
+  font-family: "SF Pro Rounded Regular";
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
@@ -875,7 +935,7 @@ ul {
 .blog__title {
   color: #5FD788;
   text-align: center;
-  font-family: SF Pro Rounded;
+  font-family: "SF Pro Rounded Regular";
   font-size: 50px;
   font-style: normal;
   font-weight: 600;

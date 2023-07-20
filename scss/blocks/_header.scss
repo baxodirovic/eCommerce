@@ -46,10 +46,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 50px;
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      z-index: 1;
     }
     input[type="checkbox"]:checked + .menu + .navbar ul {
       transform: translateY(0);
@@ -64,12 +66,13 @@
         flex-direction: column;
         gap: 20px;
         height: 200px;
-        top: 0;
+        top: 50px;
         position: fixed;
         align-items: center;
         justify-content: center;
-        transform: translateX(320%);
+        transform: translateX(200%);
         background-color: white;
+        right: 0px;
       }
     }
     li {
