@@ -1,0 +1,26 @@
+.product__trends {
+  background-image: url(../../img/Visual\ -\ Flower-trends.svg);
+  height: 540px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  @media (max-width: $desktop) {
+    width: 100%;
+    background-size: contain;
+    background-position: left;
+    padding-left: 0px;
+    align-items: center;
+  }
+  @media (max-width: $table) {
+    background-image: url(../../img/Visual\ -\ Flower\ \(1\).svg);
+    width: 229.539px;
+    height: 327px;
+    margin-bottom: 30px;
+  }
+}

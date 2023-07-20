@@ -10,11 +10,11 @@
 
 .product__bestsellers {
   background-image: url(../../img/Visual\ -\ Flower.svg);
-  height: 560px;
+  height: 500px;
   width: 300px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
