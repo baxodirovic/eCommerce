@@ -1,0 +1,76 @@
+.footer__block {
+  border: 0.5px solid $color-footer;
+  background: $color-footer;
+  margin-top: 70px
+}
+
+.footer__logo {
+  @include dis-c;
+  gap: 10px;
+  margin-left: 100px;
+  @media (max-width: $desktop-1) {
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+  @media (max-width: $table) {
+    margin: 0;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+
+.footer__nav {
+  @include dis-f;
+  gap: 50px;
+  @media (max-width: $desktop) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footer__navbar {
+  @include dis-f;
+  flex-direction: column;
+  ul {
+    @include dis-f;
+    flex-direction: column;
+  }
+}
+
+.footer__title {
+  color: $color-text-green;
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; 
+  margin-top: 0px;
+  @media (max-width: $table) {
+    margin-top: 12px;
+  }
+}
+
+.footer__support {
+  color: $color-text-grey;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.footer__copyright {
+  p {
+    color: #6B7280;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    width: 140px;
+  }
+  @include dis-f;
+  margin-top: 50px;
+}
