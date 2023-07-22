@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: sf pro display;
   font-style: normal;
@@ -215,13 +216,11 @@ ul {
   }
 }
 @media (max-width: 834px) {
-  .header__hamburger .menu::after, .header__hamburger .menu::before {
-    content: "";
-    width: 20px;
-    height: 3px;
+  .header__hamburger .menu::after {
+    content: url(../../img/🦆\ icon\ _hamburger\ menu_.svg);
+    width: 25.625px;
+    height: 15.66px;
     display: block;
-    margin-bottom: 5px;
-    background-color: #1F2937;
   }
 }
 

@@ -89,13 +89,11 @@
       color: $color-text-black;
     }
     .menu {
-      &::after , &::before {
-        content: "";
-        width: 20px;
-        height: 3px;
+      &::after {
+        content: url(../../img/🦆\ icon\ _hamburger\ menu_.svg);
+        width: 25.625px;
+        height: 15.66px;
         display: block;
-        margin-bottom: 5px;
-        background-color: $color-text-black;
       }
     }
   }
