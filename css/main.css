@@ -506,6 +506,24 @@ ul {
   top: 565px;
   left: 400px;
 }
+@media (max-width: 1200px) {
+  .therapy__image::after {
+    content: url(../../img/Frame\ desktop.svg);
+    width: 82.114px;
+    height: 80.329px;
+    top: 270px;
+    left: 190px;
+  }
+}
+@media (max-width: 834px) {
+  .therapy__image::after {
+    content: url(../../img/Frame-tablet.svg);
+    width: 31.676px;
+    height: 30.987px;
+    top: 98px;
+    left: 98px;
+  }
+}
 
 .therapy__image::before {
   content: url(../../img/left\ frame.svg);
@@ -515,6 +533,24 @@ ul {
   z-index: 1;
   top: 520px;
   left: 188px;
+}
+@media (max-width: 1200px) {
+  .therapy__image::before {
+    content: url(../../img/Frame-flower-desktop.svg);
+    width: 44.595px;
+    height: 66.941px;
+    top: 235px;
+    left: 65px;
+  }
+}
+@media (max-width: 834px) {
+  .therapy__image::before {
+    content: url(../../img/Frame-flower-table.svg);
+    width: 17.202px;
+    height: 25.822px;
+    top: 85px;
+    left: 45px;
+  }
 }
 
 .therapy__title {
