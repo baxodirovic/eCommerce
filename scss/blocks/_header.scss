@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #dedede;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  top: 0;
 }
 
 .header__logo {
